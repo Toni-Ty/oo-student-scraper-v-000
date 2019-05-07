@@ -8,7 +8,6 @@ class Student
     #student hash = name and location of student
     student_hash.each do |att, value|
      self.send("#{att}=", value)
-     binding.pry
    end
      @@all << self
    end
